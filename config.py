@@ -132,6 +132,10 @@ def configure(keymap):
     ## カスタマイズの設定
     ####################################################################################################
 
+    ### 個別設定
+
+    keymap.replaceKey("LWin", "RCtrl")
+
     # Emacs のキーバインドにするウィンドウのクラスネームを指定する（全ての設定に優先する）
     emacs_target_class   = ["Edit"]                # テキスト入力フィールドなどが該当
 
@@ -221,7 +225,7 @@ def configure(keymap):
 
     # IME を切り替えるキーを指定する（複数指定可）
     # toggle_input_method_key = ["C-Yen"]
-    toggle_input_method_key = ["C-Yen", "C-o"]
+    toggle_input_method_key = ["C-Yen", "C-o", "C-Space"]
 
     # C-iキーを Tabキーとして使うかどうかを指定する（True: 使う、False: 使わない）
     use_ctrl_i_as_tab = True
